@@ -1,0 +1,21 @@
+package recursion;
+
+import java.util.Scanner;
+
+public class print_n_to_1 {
+    public static void rec(int n){
+        if (n==0)  return;//base case
+        System.out.println(n); //work
+        rec(n-1);//call
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("please enter number :");
+        int n=sc.nextInt();
+        rec(n);
+
+
+    }
+}
